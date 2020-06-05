@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title><%=blog.title%></title>
+
+    <%- include ('../partials/default/header-css')%>
+
+  </head>
+  <body class=bg-shape>
+
+<%- include ('../partials/default/top-navigation')%>
+
+
+    <!--================Hero Banner SM Area Start =================-->
+
+    <div class="blogsdetails">
+      <section class="hero-banner">
+      <div class="container">
+
+        <div class="title">
+             <p id="date"><%=blog.creationDate%>/
+             <%= blog.category?.title %>
+             </p>
+             <p class="a"><%=blog.title%></p>
+        </div>
+      </div>
+    </section>
+    <!--================Hero Banner SM Area End =================-->
+
+
+
+    <!--================Blog Area =================-->
+    <section class="blog_area single-post-area section-margin">
+      <!--    <div class="blog-author">
+                      <div class="media align-items-center">
+                        <img src="img/blog/author.png" alt="">
+                        <div class="media-body">
+                          <a href="#">
+                            <h4>Harvard milan</h4>
+                          </a>
+                          <p>Second divided from form fish beast made. Every of seas all gathered use saying you're, he our dominion twon Second divided from</p>
+                          <a href="#"><i class="fab fa-linkedin"></i> Follow</a>
+                        </div>
+                      </div>
+                    </div>  -->
+
+        <div class="container">
+            <div class="row">
+                <div class="posts-list">
+                    <div class="single-post">
+                      <div class="blog_details">
+                            <div class="feature-img">
+                                <img id="postimg" class="img-fluid" src="<%=blog.file%>" width="700" alt="">
+                            </div>
+                        <div class="details content">
+                        <p style="margin-bottom: 35px;
+                        margin-top: 15px;"><em>In today's newsletter we talk about the lopsided economics of running an airline and offer a spirited defence for the industry.</em></p><!--kg-card-begin: hr--><hr><!--kg-card-end: hr--><!--kg-card-begin: html-->
+                          <div style="display: inline-block;
+                          font-weight: 700;
+                          color: #99D5F5;
+                          padding: 3px 8px;
+                          border-radius: 6px;
+                          border: 1px solid #99D5F5;
+                          margin-bottom: 15px;
+                          margin-top: 15px;"><%= blog.category?.title %></div>
+                          <p id="story">The Story</p>
+                                 <%-blog.description%>
+                        </div>
+                        <hr><!--kg-card-end: hr--><p id="blogfoot">Share this Blog on <a href="https://api.whatsapp.com/send?text=An%20explainer%20on%20the%20lopsided%20economics%20of%20running%20an%20airline.%20https://bit.ly/2yzUFuB">WhatsApp</a>, <a href="https://twitter.com/intent/tweet?url=https://bit.ly/36vj55b&amp;via=finshots&amp;text=An%20explainer%20on%20the%20lopsided%20economics%20of%20running%20an%20airline.">Twitter</a>, or <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://finshots.in/archive/the-airlines-curse">LinkedIn</a>.</p>
+                    </div>
+            <!--        <div class="navigation-top">
+                      <div class="d-sm-flex justify-content-between text-center">
+
+
+                        <ul class="social-icons">
+                          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                          <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                          <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                      </div>
+
+
+                    </div> -->
+                    <div class="container" align="center">
+              		<a href="http://www.facebook.com/sharer.php?u=https://finshots.in/archive/the-airlines-curse/%3Futm_source%3DwebShare%26utm_medium%3Dfacebook" target="_blank" style="margin: 10px; font-size:36px;"><span title="Share on facebook"><i class="fab fa-facebook-f" style="font-size:40px; color:#3b5998;" ></i></span></a>
+              		<a href="https://api.whatsapp.com/send?text=Finshots%20Special%3A%20The%20Airlines'%20Curse%20https://finshots.in/archive/the-airlines-curse/%3Futm_source%3DwebShare%26utm_medium%3Dwhatsapp" style="font-size:36px; margin:10px;" target="_blank"><span title="Send on whatsapp"><i class="fab fa-whatsapp" style="font-size:40px; color:#25d366"></i></span></a>
+              		<a href="https://twitter.com/share?url=https://finshots.in/archive/the-airlines-curse/%3Futm_source%3DwebShare%26utm_medium%3Dtwitter&amp;text=Finshots%20Special%3A%20The%20Airlines'%20Curse%20via%20%40finshots" target="_blank" style="margin: 10px; font-size:36px;"><span title="Share on twitter"><i class="fab fa-twitter" style="font-size:40px; color:#1da1f2;" ></i></span></a>
+              		<br><br>
+
+              	</div>
+
+                      </div>
+                        </div>
+                          </div>
+                          </div>
+                          </section>
+    </div>
+<%- include ('../partials/default/footer')%>
+  </body>
+</html>
