@@ -15,7 +15,7 @@
     "ejs-layouts": "0.0.1",
     "express": "^4.17.1",
     "express-ejs-layouts": "^2.5.0",
-    "express-fileupload": "^1.1.7-alpha.3",
+    "express-fileupload": "^1.1.9",
     "express-handlebars": "^4.0.4",
     "express-sanitizer": "^1.0.5",
     "express-session": "^1.17.1",
